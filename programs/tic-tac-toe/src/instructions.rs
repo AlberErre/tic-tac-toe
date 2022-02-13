@@ -9,3 +9,10 @@ pub struct SetupGame<'info> {
   pub player_one: Signer<'info>,
   pub system_program: Program<'info, System>,
 }
+
+#[derive(Accounts)]
+pub struct Play<'info> {
+  #[account(mut)]
+  pub game: Account<'info, Game>,
+  pub player: Signer<'info>,
+}

@@ -30,3 +30,9 @@ pub enum Sign {
   X,
   O,
 }
+
+#[derive(AnchorSerialize, AnchorDeserialize)]
+pub struct Tile {
+  pub row: u8,
+  pub column: u8,
+}
