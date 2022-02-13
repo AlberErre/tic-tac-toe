@@ -4,6 +4,8 @@ use anchor_lang::prelude::*;
 use num_traits::*;
 
 impl Game {
+  pub const MAXIMUM_SIZE: usize = 116 + 8; // 8 for discriminator
+
   pub fn is_active(&self) -> bool {
     self.state == GameState::Active
   }
