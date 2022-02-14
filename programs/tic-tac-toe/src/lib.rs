@@ -8,7 +8,7 @@ use crate::instructions::*;
 use crate::state::*;
 use anchor_lang::prelude::*;
 
-declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
+declare_id!("Hne9PhgqGNZaDvJJP8jmMvoQoT4UJBFkim1ZLev1YhYL");
 
 #[program]
 pub mod tic_tac_toe {
